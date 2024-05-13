@@ -6,6 +6,7 @@ import { GoPerson } from "react-icons/go";
 import { SlGraduation } from "react-icons/sl";
 import { HiOutlineChatAlt2 } from "react-icons/hi";
 import { IoNotificationsOutline, IoSearch } from "react-icons/io5";
+import Link from "next/link";
 
 const Sidebar = () => {
   return (
@@ -30,7 +31,7 @@ const Sidebar = () => {
             ].map((item, index) => (
               <li key={index} className="flex items-center mb-7">
                 {item.icon}
-                <span className="ml-2">{item.text}</span>
+                <Link className="ml-2" href='/dashboard'>{item.text}</Link>
               </li>
             ))}
           </ul>
